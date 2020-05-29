@@ -1,1 +1,1 @@
-GeNames.github.io
+genames.github.io
