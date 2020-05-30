@@ -31,6 +31,7 @@ function getRandomLastName(tabLastname){
 
 function getRandomEmail(firstname, lastname){
 	item = (firstname + lastname + (Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000) + "@gmail.com").toLowerCase();
+	item = item.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 	return item;
 }
 
